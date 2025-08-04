@@ -28,7 +28,7 @@ export class ExperienceComponent implements OnInit {
    */
   fetchExperienceData(): void {
     if (isPlatformBrowser(this.platformId)) {
-      this.http.get('/assets/experience/experience-data.json').subscribe(data => {
+      this.http.get('assets/experience/experience-data.json').subscribe(data => {
         this.experienceData = data;
       });
     }
