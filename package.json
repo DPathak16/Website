@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-angular",
+  "name": "Website",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:portfolio-angular": "node dist/portfolio-angular/server/server.mjs"
+    "serve:ssr:Website": "node dist/Website/server/server.mjs"
   },
   "private": true,
   "dependencies": {

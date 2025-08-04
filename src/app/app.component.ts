@@ -33,7 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio-angular';
+  title = 'Website';
 
   @HostListener('window:beforeunload', ['$event'])
   unloadHandler(event: Event) {
