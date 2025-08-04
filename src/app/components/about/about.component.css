@@ -1,0 +1,221 @@
+/* About Section */
+.about-section {
+  padding: 80px 20px;
+  background: #000; /* Black background */
+  font-family: 'Roboto', sans-serif;
+  color: #fff; /* White text for contrast */
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* About Text */
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-text h1 {
+  font-size: 4.5rem;
+  color: #D2AE93; /* Theme color for title */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ccc; /* Light gray for readability */
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-text .description {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.about-text .description li {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #ccc; /* Light gray for list items */
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  font-family: 'Cormorant Garamond', serif; /* Elegant font for list items */
+}
+
+.about-text .description li::before {
+  content: '•';
+  color: #D2AE93; /* Theme color for bullet points */
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.2;
+}
+
+.about-text .description li strong {
+  color: #D2AE93; /* Bright yellow for emphasis */
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 2.5rem;
+  color: #f7d708; /* Bright yellow for subtitle */
+  margin-bottom: 20px;
+  font-family: 'Righteous', cursive; /* Project theme font */
+}
+
+/* Button Container */
+.buttons {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+}
+
+.btn-primary,
+.btn-transparent {
+  flex: 1; /* Buttons take equal width on smaller screens */
+  text-align: center;
+}
+
+/* Primary Button */
+.btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #D2AE93; /* Theme color */
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 50px; /* Rounded button */
+  transition: all 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif; /* Bold font for buttons */
+}
+
+.btn-primary:hover {
+  background: #b08c75; /* Darker shade on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+.btn-primary:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Reset shadow */
+}
+
+/* Transparent Button */
+.btn-transparent {
+  display: inline-block;
+  padding: 12px 30px;
+  background: transparent; /* Transparent background */
+  color: #D2AE93; /* Theme color for text */
+  border: 2px solid #D2AE93; /* Border with theme color */
+  text-decoration: none;
+  border-radius: 50px; /* Rounded button */
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.btn-transparent:hover {
+  background: #D2AE93; /* Theme color on hover */
+  color: #000; /* Black text on hover */
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+}
+
+.btn-transparent:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Reset shadow */
+}
+
+/* About Image */
+.about-image {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%; /* Ensures the image scales properly */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05); /* Slightly larger hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 30px; /* Reduce gap for medium screens */
+  }
+
+  .about-text h1 {
+    font-size: 3.5rem; /* Adjust title size */
+  }
+
+  .about-text p {
+    font-size: 1.1rem; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Reduce gap between buttons */
+  }
+
+  .btn-primary,
+  .btn-transparent {
+    flex: none; /* Buttons take their natural width */
+    width: 100%; /* Full-width buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 2.5rem; /* Smaller title for mobile */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Smaller paragraph size */
+  }
+
+  .about-text .description li {
+    font-size: 1.2rem; /* Adjust list item size */
+  }
+}

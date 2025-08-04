@@ -1,0 +1,205 @@
+/* General Page Styling */
+.experience-page {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Section */
+.experience-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.experience-header h1 {
+  font-size: 4rem;
+  color: #d2ae93;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.experience-header p {
+  font-size: 1.8rem;
+  color: rgba(210, 174, 147, 0.8);
+  margin-bottom: 1rem;
+}
+
+/* Country Section */
+.country-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.country-title {
+  font-size: 2.5rem;
+  color: #d2ae93;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+/* Experience Card */
+.experience-card {
+  border: 1px solid #d2ae93;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(210, 174, 147, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(210, 174, 147, 0.4);
+}
+
+.experience-card-header h3 {
+  font-size: 2.5rem;
+  color: #d2ae93;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card-responsibility,
+.experience-card-projects {
+  font-size: 1.6rem;
+  color: #f7d708;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-location,
+.experience-role,
+.experience-period {
+  display: block;
+  font-size: 1.4rem;
+  color: rgba(210, 174, 147, 0.8);
+  margin-bottom: 0.3rem;
+}
+
+/* Responsibilities */
+.experience-points {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.experience-points li {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* Projects */
+.experience-projects {
+  list-style: square;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  color: #d2ae93;
+}
+
+.experience-projects li {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .experience-header h1 {
+    font-size: 3rem;
+  }
+
+  .experience-header p {
+    font-size: 1.4rem;
+  }
+
+  .country-title {
+    font-size: 2rem;
+  }
+
+  .experience-card-header h3 {
+    font-size: 2rem;
+  }
+
+  .experience-location,
+  .experience-role,
+  .experience-period {
+    font-size: 1.2rem;
+  }
+
+  .experience-points li,
+  .experience-projects li {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-page {
+    padding: 1rem;
+  }
+
+  .experience-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .experience-header p {
+    font-size: 1.2rem;
+  }
+
+  .country-title {
+    font-size: 1.8rem;
+  }
+
+  .experience-card-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .experience-location,
+  .experience-role,
+  .experience-period {
+    font-size: 1.1rem;
+  }
+
+  .experience-points li,
+  .experience-projects li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-header h1 {
+    font-size: 2rem;
+  }
+
+  .experience-header p {
+    font-size: 1rem;
+  }
+
+  .country-title {
+    font-size: 1.5rem;
+  }
+
+  .experience-card-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience-location,
+  .experience-role,
+  .experience-period {
+    font-size: 1rem;
+  }
+
+  .experience-points li,
+  .experience-projects li {
+    font-size: 1rem;
+  }
+}

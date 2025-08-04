@@ -1,0 +1,42 @@
+{
+    "Canada": [
+      {
+        "degree": "Graduate Certificate",
+        "field": "Web Development",
+        "institution": "Conestoga College",
+        "location": "Kitchener, Ontario",
+        "country": "Canada",
+        "startDate": "Sep 2023",
+        "endDate": "Apr 2025",
+        "description": "A post-graduate program focused on modern web technologies, frontend/backend development, and software project delivery using industry-standard tools and frameworks.",
+        "keyCourses": [
+          "Advanced JavaScript",
+          "Full Stack Web Development",
+          "Database Design and Development",
+          "Agile Methodologies",
+          "Web Security and Testing"
+        ],
+        "gpa": "2.7/4"
+      }
+    ],
+    "India": [
+      {
+        "degree": "Bachelor of Engineering",
+        "field": "Computer Science and Engineering",
+        "institution": "Gujarat Technological University",
+        "location": "Surat, Gujarat",
+        "country": "India",
+        "startDate": "Apr 2018",
+        "endDate": "May 2022",
+        "description": "A four-year undergraduate program covering fundamental and advanced concepts in computer science and engineering, including software development, algorithms, and networking.",
+        "keyCourses": [
+          "Data Structures and Algorithms",
+          "Operating Systems",
+          "Computer Networks",
+          "Database Management Systems",
+          "Software Engineering"
+        ],
+        "gpa": "3.2/4"
+      }
+    ]
+}

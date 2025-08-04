@@ -1,0 +1,45 @@
+<div class="experience-page">
+  <header class="experience-header">
+    <h1 class="fascinate-inline-regular">Professional Experience</h1>
+    <p class="fugaz-one-regular">Explore my journey through impactful roles and projects across Canada and India.</p>
+  </header>
+
+  <section class="experience-section">
+    <!-- Check if experienceData has content -->
+    <div *ngIf="getCountries().length > 0; else noData">
+      <!-- Loop through all countries -->
+      <div *ngFor="let country of getCountries()" class="country-section">
+        <h2 class="country-title righteous-regular">{{ experienceData[country]?.title || country }}</h2>
+
+        <!-- Loop through all companies in the country -->
+        <div class="experience-card" *ngFor="let exp of experienceData[country]?.items">
+          <div class="experience-card-header">
+            <h3 class="lilita-one-regular">{{ exp.company }}</h3>
+            <span class="experience-location bebas-neue-regular">{{ exp.location }}</span>
+            <span class="experience-role bebas-neue-regular">{{ exp.role }}</span>
+            <span class="experience-period bebas-neue-regular">{{ exp.period }}</span>
+          </div>
+
+          <div class="experience-card-body">
+            <h4 class="experience-card-responsibility caprasimo-regular" *ngIf="exp.points?.length">Responsibilities:</h4>
+            <ul class="experience-points cormorant-garamond-fontStyle" *ngIf="exp.points?.length">
+              <li *ngFor="let point of exp.points">{{ point }}</li>
+            </ul>
+
+            <h4 class="experience-card-projects caprasimo-regular" *ngIf="exp.projects?.length">Projects:</h4>
+            <ul class="experience-projects cormorant-garamond-fontStyle" *ngIf="exp.projects?.length">
+              <li *ngFor="let project of exp.projects">{{ project }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fallback for no data -->
+    <ng-template #noData>
+      <div class="no-data">
+        <p>No experience data available at the moment. Please check back later.</p>
+      </div>
+    </ng-template>
+  </section>
+</div>

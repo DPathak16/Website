@@ -1,0 +1,19 @@
+{
+  "offerings": [
+    {
+      "title": "Frontend Development",
+      "description": "I craft high-performance, accessible, and modern web interfaces using Angular (v14–19), React, and TypeScript. With a strong focus on clean UI/UX, I build scalable frontend architectures that deliver seamless user experiences across devices. My approach combines design systems, component-driven development, and performance tuning for pixel-perfect results.",
+      "icon": "logos/frontend.png"
+    },
+    {
+      "title": "Backend Development",
+      "description": "I engineer secure and scalable backend solutions using Node.js, Express, and GraphQL/REST APIs. With experience in data modeling, API design, and microservices, I ensure efficient communication between frontend and backend systems. My backend logic is optimized for performance, reliability, and maintainability.",
+      "icon": "logos/backend.png"
+    },
+    {
+      "title": "Hosting & Deployment",
+      "description": "I streamline hosting and deployment workflows using cloud platforms like AWS, Firebase, and Netlify. From CI/CD pipelines to production monitoring, I ensure your applications are reliably deployed, version-controlled, and highly available. I specialize in automating deployments for performance-focused, secure web apps.",
+      "icon": "logos/hosting.png"
+    }
+  ]
+}

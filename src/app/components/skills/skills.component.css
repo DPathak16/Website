@@ -1,0 +1,200 @@
+:host {
+  display: block;
+  background-color: #000000; /* Dark background */
+  color: #D2AE93; /* Gold text color */
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.skill-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skill-header h1 {
+  font-size: 5.5rem;
+  color: #d2ae93;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tabs Container */
+p-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Tab List Centered */
+p-tablist {
+  display: flex !important;
+  justify-content: center !important;
+  background-color: transparent;
+  border-bottom: 1px solid #D2AE93; /* Gold border */
+  padding-bottom: 0.5rem;
+  gap: 1.5rem;
+}
+
+/* Individual Tab Style */
+p-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: #D2AE93 !important; /* Gold text */
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+p-tab:hover {
+  color: #facc15 !important; /* Bright gold hover */
+  cursor: pointer;
+}
+
+/* Avatar Icon Size in Tabs */
+p-tab .p-avatar {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+/* Tab Panel Styles */
+p-tabpanel {
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 2rem;
+}
+
+/* Skill Cards Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards in a row */
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Card Styling */
+.skill-card {
+  background-color: #0a0a0a; /* Dark card background */
+  color: #D2AE93; /* Gold text */
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(210, 174, 147, 0.2); /* Subtle shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(210, 174, 147, 0.4); /* Enhanced shadow */
+}
+
+/* Skill Image */
+.skill-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+  margin: 1rem auto 0;
+}
+
+/* Card Content */
+.skill-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.skill-body h4 {
+  color: #D2AE93;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skill-body p {
+  font-size: 0.9rem;
+  color: rgba(210, 174, 147, 0.8); /* Slightly transparent gold */
+  margin: 0.25rem 0 0.75rem;
+}
+
+/* Star Rating */
+.skill-level {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.skill-level .pi {
+  font-size: 1rem;
+  color: #facc15; /* Bright gold for stars */
+  transition: color 0.2s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in a row for medium screens */
+  }
+
+  .skill-header h1 {
+    font-size: 4rem;
+  }
+
+  p-tablist {
+    gap: 1rem;
+  }
+
+  p-tab {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards in a row for small screens */
+  }
+
+  .skill-header h1 {
+    font-size: 3rem;
+  }
+
+  p-tab {
+    font-size: 0.9rem;
+  }
+
+  .skill-img {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* 1 card in a row for very small screens */
+  }
+
+  .skill-header h1 {
+    font-size: 2.5rem;
+  }
+
+  p-tab {
+    font-size: 0.8rem;
+  }
+
+  .skill-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .skill-body h4 {
+    font-size: 1rem;
+  }
+
+  .skill-body p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="offerings-page">
+  <header class="offerings-header">
+    <h1 class="fascinate-inline-regular">My Offerings</h1>
+    <p class="fugaz-one-regular">Explore the services I provide to bring your ideas to life.</p>
+  </header>
+
+  <section class="offerings-section">
+    <!-- Loop through offerings dynamically -->
+    <div *ngFor="let offering of offerings" class="offering-card">
+      <div class="offering-icon">
+        <img [src]="offering.icon" [alt]="offering.title + ' Icon'" />
+      </div>
+      <h2 class="offering-title">{{ offering.title }}</h2>
+      <p class="offering-description">{{ offering.description }}</p>
+    </div>
+  </section>
+</div>

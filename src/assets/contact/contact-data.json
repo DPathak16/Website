@@ -1,0 +1,19 @@
+{
+    "contactLinks": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/Daksh-thelostauthor",
+            "icon": "/icons/github.png"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/dakshdp/",
+            "icon": "/icons/linkedin.png"
+        },
+        {
+            "name": "Gmail",
+            "url": "mailto:dakshds2616@gmail.com",
+            "icon": "/icons/email.png"
+        }
+    ]
+}

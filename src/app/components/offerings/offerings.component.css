@@ -1,0 +1,99 @@
+/* General Page Styling */
+.offerings-page {
+  padding: 40px 20px;
+  background-color: #000; /* Black background */
+  color: #d2ae93; /* Warm beige text */
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/* Header Section */
+.offerings-header h1 {
+  font-size: 5rem;
+  color: #d2ae93; /* Bright yellow for title */
+  font-family: "Fascinate Inline", cursive;
+  margin-bottom: 10px;
+}
+
+.offerings-header p {
+  font-size: 1.2rem;
+  color: #d2ae93;
+  margin-bottom: 30px;
+}
+
+/* Offerings Section */
+.offerings-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Offering Card */
+.offering-card {
+  background-color: #1a1a1a; /* Dark card background */
+  border: 2px solid #d2ae93; /* Warm beige border */
+  border-radius: 15px;
+  padding: 20px;
+  width: 456px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Offering Icon */
+.offering-icon img {
+  width: 456px;
+  height: 390px;
+  margin-bottom: 15px;
+}
+
+/* Offering Title */
+.offering-title {
+  font-size: 1.5rem;
+  color: #f7d708; /* Bright yellow for title */
+  font-family: "Righteous", cursive;
+  margin-bottom: 10px;
+}
+
+/* Offering Description */
+.offering-description {
+  font-size: 1rem;
+  color: #ccc; /* Light gray for description */
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .offerings-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offering-card {
+    width: 90%; /* Full width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .offerings-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .offerings-header p {
+    font-size: 1rem;
+  }
+
+  .offering-title {
+    font-size: 1.3rem;
+  }
+
+  .offering-description {
+    font-size: 0.9rem;
+  }
+}

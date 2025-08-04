@@ -1,0 +1,35 @@
+{
+  "frontendSkills": [
+    { "name": "Angular", "img": "/logos/angular.svg", "description": "Powerful frontend framework.", "level": 5 },
+    { "name": "React", "img": "/logos/React-icon.svg", "description": "Component-based UI library.", "level": 4 },
+    { "name": "TypeScript", "img": "/logos/ts.svg", "description": "Typed superset of JavaScript.", "level": 4 },
+    { "name": "JavaScript", "img": "/logos/JavaScript-logo.png", "description": "Modern scripting language.", "level": 4 },
+    { "name": "HTML5", "img": "/logos/HTML5_logo_and_wordmark.svg", "description": "Markup language.", "level": 5 },
+    { "name": "CSS3", "img": "/logos/CSS3_logo_and_wordmark.svg", "description": "Stylesheet language.", "level": 5 },
+    { "name": "Bootstrap", "img": "/logos/Bootstrap_logo.svg", "description": "Popular UI framework.", "level": 4 },
+    { "name": "PrimeNG", "img": "/logos/primeng-logo.webp", "description": "UI components for Angular.", "level": 3 },
+    { "name": "Moment.js", "img": "/logos/moment-js-logo-png_seeklogo-273665.png", "description": "Date library.", "level": 3 },
+    { "name": "Underscore.js", "img": "/logos/underscore.png", "description": "Utility library.", "level": 3 }
+  ],
+  "backendSkills": [
+    { "name": "Node.js", "img": "https://nodejs.org/static/images/logo.svg", "description": "JavaScript runtime.", "level": 4 },
+    { "name": "RESTful Web Services", "img": "/logos/api-file-outline-icon.png", "description": "Networked applications.", "level": 3 },
+    { "name": "JSON-based APIs", "img": "https://cdn-icons-png.flaticon.com/512/136/136525.png", "description": "Data-interchange format.", "level": 3 },
+    { "name": "MongoDB", "img": "/logos/MongoDB_Fores-Green.svg.png", "description": "NoSQL database.", "level": 4 },
+    { "name": "MySQL", "img": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/1280px-MySQL_logo.svg.png", "description": "Relational database management system.", "level": 4 },
+    { "name": "GraphQL", "img": "https://graphql.org/img/logo.svg", "description": "Query language for APIs.", "level": 3 }
+  ],
+  "toolsSkills": [
+    { "name": "Firebase", "img": "/logos/Primary_Vertical_Lockup_Full_Color_Inverted.png", "description": "App development platform.", "level": 4 },
+    { "name": "Postman", "img": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg", "description": "API testing tool.", "level": 4 },
+    { "name": "npm", "img": "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", "description": "Package manager.", "level": 4 },
+    { "name": "Yarn", "img": "https://seeklogo.com/images/Y/yarn-logo-F5E7A65FA2-seeklogo.com.png", "description": "Dependency management.", "level": 3 },
+    { "name": "GitHub", "img": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png", "description": "Version control.", "level": 5 },
+    { "name": "Bitbucket", "img": "/logos/Bitbucket_attribution_dark.png", "description": "Source code hosting.", "level": 3 },
+    { "name": "JIRA", "img": "/logos/jira.png", "description": "Project management tool.", "level": 3 },
+    { "name": "Agile/Scrum", "img": "/logos/agile.png", "description": "Agile methodologies.", "level": 3 },
+    { "name": "Chrome DevTools", "img": "https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png", "description": "Debugging tools.", "level": 4 },
+    { "name": "Code Reviews", "img": "https://cdn-icons-png.flaticon.com/512/942/942748.png", "description": "Improving code quality.", "level": 4 },
+    { "name": "Debugging Tools", "img": "/logos/debug.png", "description": "Bug fixing tools.", "level": 4 }
+  ]
+}

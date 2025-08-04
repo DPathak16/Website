@@ -1,0 +1,63 @@
+{
+  "canada": {
+    "title": "Professional Experience Canada",
+    "items": [
+      {
+        "company": "Nova Tech",
+        "location": "Kitchener, ON, Canada",
+        "role": "Angular Developer / Front-End Engineer",
+        "period": "Nov 2023 – Present",
+        "points": [
+          "Spearheaded the development of responsive and scalable Angular applications for internal scheduling and service management platforms.",
+          "Designed robust frontend modules using Angular 15+, TypeScript, SCSS, and component-driven architecture.",
+          "Participated in cloud-native development with basic AWS integration and backend collaboration.",
+          "Led the implementation of role-based dashboards and dynamic UI layouts using REST API and GraphQL data.",
+          "Supported product iteration through Agile ceremonies and cross-functional planning."
+        ],
+        "projects": [
+          "Drive Test Booking System – Online portal with real-time slot management and admin tools.",
+          "EMS – Enterprise module to manage employee roles, performance, and records.",
+          "Service Booking Platform – Multi-role booking application with user and admin dashboards."
+        ]
+      }
+    ]
+  },
+  "india": {
+    "title": "Professional Experience India",
+    "items": [
+      {
+        "company": "SRKAY Consulting Group (SCIKEY)",
+        "location": "Surat, India",
+        "role": "Senior Software Engineer (Frontend)",
+        "period": "Jan 2022 – Jul 2023",
+        "points": [
+          "Led the frontend implementation of enterprise-level Angular applications for HR systems and NGO platforms.",
+          "Developed reusable and responsive components using Angular 14–15, JavaScript, TypeScript, HTML5, and CSS3.",
+          "Took ownership of UI/UX from wireframes to high-fidelity designs, ensuring brand alignment.",
+          "Integrated RESTful APIs for modules such as leave management, 360° feedback, and recruitment workflows.",
+          "Mentored junior developers, enforced Git standards, and conducted regular code reviews."
+        ],
+        "projects": [
+          "HCIS: Built a full-featured HR platform with leave, survey, and performance modules using Angular and REST APIs.",
+          "SRKKF Portal: Developed a responsive NGO website to promote health and education initiatives.",
+          "Sphere: Created a 360° employee feedback system with dynamic UI components and chart visualizations.",
+          "HiRest: Designed a recruitment platform featuring job listings, applications, and candidate tracking.",
+          "SantokBaa Awards: Delivered a multimedia site to honor global humanitarian leaders with rich content and branding."
+        ]
+      },
+      {
+        "company": "Casepoint",
+        "location": "Surat, India",
+        "role": "Junior Frontend Developer",
+        "period": "Mar 2019 – Dec 2021",
+        "points": [
+          "Developed and styled responsive UI components using HTML5, CSS3, and JavaScript.",
+          "Created form layouts based on Figma designs and wireframes, ensuring cross-browser compatibility.",
+          "Collaborated with QA teams and designers to align the frontend with UI specifications.",
+          "Resolved layout and styling bugs across Chrome, Firefox, and Edge browsers.",
+          "Gained hands-on experience with Adobe Photoshop, Dreamweaver, and browser DevTools."
+        ]
+      }
+    ]
+  }
+}

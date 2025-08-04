@@ -1,0 +1,44 @@
+<div class="education-page">
+  <header class="education-header">
+    <h1 class="fascinate-inline-regular">Education</h1>
+    <p class="fugaz-one-regular">Explore my academic journey and achievements.</p>
+  </header>
+
+  <section class="education-section">
+    <!-- Check if educationData has content -->
+    <div *ngIf="educationData && getCountries().length > 0; else noData">
+      <!-- Loop through all countries -->
+      <div *ngFor="let country of educationData | keyvalue" class="country-section">
+        <h2 class="country-title righteous-regular">{{ country.key }}</h2>
+
+        <!-- Loop through all institutions in the country -->
+        <div *ngFor="let edu of country.value" class="education-card">
+          <div class="education-card-header">
+            <h3 class="institution-name righteous-regular">{{ edu.institution }}</h3>
+            <span class="education-location bebas-neue-regular">{{ edu.location }}</span>
+            <span class="education-period bebas-neue-regular">{{ edu.startDate }} - {{ edu.endDate }}</span>
+          </div>
+
+          <div class="education-card-body">
+            <h4 class="degree-title lilita-one-regular">{{ edu.degree }} in {{ edu.field }}</h4>
+            <p class="description cormorant-garamond-fontStyle">{{ edu.description }}</p>
+
+            <h5 class="key-courses-title caprasimo-regular" *ngIf="edu.keyCourses?.length">Key Courses:</h5>
+            <ul class="key-courses-list cormorant-garamond-fontStyle" *ngIf="edu.keyCourses?.length">
+              <li *ngFor="let course of edu.keyCourses">{{ course }}</li>
+            </ul>
+
+            <p class="education-gpa caprasimo-regular" *ngIf="edu.gpa">GPA: {{ edu.gpa }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fallback for no data -->
+    <ng-template #noData>
+      <div class="no-data">
+        <p>No education data available at the moment. Please check back later.</p>
+      </div>
+    </ng-template>
+  </section>
+</div>

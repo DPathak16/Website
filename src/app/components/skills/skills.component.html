@@ -1,0 +1,94 @@
+<header class="skill-header">
+  <h1 class="fascinate-inline-regular">Technical Skills</h1>
+</header>
+<p-tabs value="0" scrollable>
+  <p-tablist>
+    <ng-template #previcon>
+      <i class="pi pi-minus"></i>
+    </ng-template>
+    <p-tab value="0" class="flex items-center !gap-2">
+      <!-- <p-avatar image="/logos/frontend.png" shape="circle"></p-avatar> -->
+      <span class="font-bold whitespace-nowrap">Frontend</span>
+    </p-tab>
+    <p-tab value="1" class="flex items-center !gap-2">
+      <!-- <p-avatar image="assets/images/backend.png" shape="circle"></p-avatar> -->
+      <span class="font-bold whitespace-nowrap">Backend</span>
+    </p-tab>
+    <p-tab value="2" class="flex items-center !gap-2">
+      <!-- <p-avatar image="assets/images/tools.png" shape="circle"></p-avatar> -->
+      <span class="font-bold whitespace-nowrap">Tools</span>
+      <!-- <p-badge value="3"></p-badge> -->
+    </p-tab>
+    <ng-template #nexticon>
+      <i class="pi pi-plus"></i>
+    </ng-template>
+  </p-tablist>
+  <p-tabpanels>
+    <p-tabpanel value="0">
+      <div class="skills-grid">
+        <p-card *ngFor="let skill of frontendSkills" class="skill-card">
+          <ng-template pTemplate="header">
+            <img [src]="skill.img" [alt]="skill.name" class="skill-img" />
+          </ng-template>
+          <div class="skill-body">
+            <h4>{{ skill.name }}</h4>
+            <p>{{ skill.description }}</p>
+            <div class="skill-level">
+              <i
+                *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+                class="pi"
+                [ngClass]="i < skill.level ? 'pi-star-fill' : 'pi-star'"
+                [style.color]="i < skill.level ? '#facc15' : '#d1d5db'"
+              >
+              </i>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </p-tabpanel>
+    <p-tabpanel value="1">
+      <div class="skills-grid">
+        <p-card *ngFor="let skill of backendSkills" class="skill-card">
+          <ng-template pTemplate="header">
+            <img [src]="skill.img" [alt]="skill.name" class="skill-img" />
+          </ng-template>
+          <div class="skill-body">
+            <h4>{{ skill.name }}</h4>
+            <p>{{ skill.description }}</p>
+            <div class="skill-level">
+              <i
+                *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+                class="pi"
+                [ngClass]="i < skill.level ? 'pi-star-fill' : 'pi-star'"
+                [style.color]="i < skill.level ? '#facc15' : '#d1d5db'"
+              >
+              </i>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </p-tabpanel>
+    <p-tabpanel value="2">
+      <div class="skills-grid">
+        <p-card *ngFor="let skill of toolsSkills" class="skill-card">
+          <ng-template pTemplate="header">
+            <img [src]="skill.img" [alt]="skill.name" class="skill-img" />
+          </ng-template>
+          <div class="skill-body">
+            <h4>{{ skill.name }}</h4>
+            <p>{{ skill.description }}</p>
+            <div class="skill-level">
+              <i
+                *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+                class="pi"
+                [ngClass]="i < skill.level ? 'pi-star-fill' : 'pi-star'"
+                [style.color]="i < skill.level ? '#facc15' : '#d1d5db'"
+              >
+              </i>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </p-tabpanel>
+  </p-tabpanels>
+</p-tabs>

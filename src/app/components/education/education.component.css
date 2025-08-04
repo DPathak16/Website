@@ -1,0 +1,249 @@
+.education-page {
+  padding: 20px;
+  font-family: "Fugaz One", sans-serif;
+  background-color: #000; /* Dark background for contrast */
+  color: #d2ae93; /* Warm beige for text */
+}
+
+.education-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.education-header h1 {
+  font-size: 4rem;
+  color: #d2ae93; /* Bright yellow for the title */
+  font-family: "Fascinate Inline", cursive;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.education-header p {
+  font-size: 1.6rem;
+  color: #d2ae93;
+  margin-top: 10px;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education-card {
+  border: 2px solid #d2ae93;
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(145deg, #1a1a1a, #000);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.education-card-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.institution-name {
+  font-size: 1.8rem;
+  color: #f7d708;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+}
+
+.education-location,
+.education-period {
+  font-size: 1.2rem;
+  color: #d2ae93;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.education-card-body {
+  margin-top: 15px;
+}
+
+.degree-title {
+  font-size: 1.6rem;
+  color: #f7d708;
+  font-family: "Lilita One", cursive;
+  margin-bottom: 10px;
+}
+
+.field-of-study {
+  font-size: 1.4rem;
+  color: #d2ae93;
+  font-family: "Caprasimo", cursive;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.8;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.key-courses-title {
+  font-size: 1.4rem;
+  color: #f7d708;
+  margin-top: 20px;
+  font-family: "Fugaz One", sans-serif;
+}
+
+.key-courses-list {
+  list-style-type: circle;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: oblique;
+  margin-left: 25px;
+  color: #d2ae93;
+}
+
+.education-gpa {
+  font-size: 1.4rem;
+  color: #f7d708;
+  margin-top: 10px;
+  font-family: "Caprasimo", cursive;
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: center; /* Ensure text alignment */
+}
+
+.no-data {
+  text-align: center;
+  color: #d2ae93;
+  font-size: 1.6rem;
+  margin-top: 50px;
+}
+
+/* Country Title Styling */
+.country-title {
+  font-size: 2.5rem;
+  color: #f7d708; /* Bright yellow for emphasis */
+  font-family: "Righteous", cursive; /* Project theme font */
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #d2ae93; /* Warm beige underline */
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* .country-title:hover {
+  color: #fff; 
+  transform: scale(1.05); /
+  cursor: pointer;
+} */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .education-header h1 {
+    font-size: 3rem;
+  }
+
+  .education-header p {
+    font-size: 1.4rem;
+  }
+
+  .education-card {
+    padding: 15px;
+  }
+
+  .institution-name {
+    font-size: 1.6rem;
+  }
+
+  .degree-title {
+    font-size: 1.4rem;
+  }
+
+  .field-of-study {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .key-courses-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .education-header p {
+    font-size: 1.2rem;
+  }
+
+  .education-card {
+    padding: 10px;
+  }
+
+  .institution-name {
+    font-size: 1.4rem;
+  }
+
+  .degree-title {
+    font-size: 1.2rem;
+  }
+
+  .field-of-study {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .key-courses-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-header h1 {
+    font-size: 2rem;
+  }
+
+  .education-header p {
+    font-size: 1rem;
+  }
+
+  .education-card {
+    padding: 8px;
+  }
+
+  .institution-name {
+    font-size: 1.2rem;
+  }
+
+  .degree-title {
+    font-size: 1rem;
+  }
+
+  .field-of-study {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .key-courses-title {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,17 @@
+<section id="contact" class="contact-section">
+  <h2>Let's Connect And Collaborate</h2>
+  <!-- <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form> -->
+
+
+  <div class="contact-icons">
+    <!-- Loop through contactLinks dynamically -->
+    <a *ngFor="let link of contactLinks" [href]="link.url" target="_blank" aria-label="link.name">
+      <img [src]="link.icon" [alt]="link.name + ' Icon'" />
+    </a>
+  </div>
+</section>
