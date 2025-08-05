@@ -2,7 +2,6 @@ import { Component, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // import { ContactsService } from '../../services/contact/contact.service';
 import { HttpClient } from '@angular/common/http';
-// import { ExperienceService } from '../../services/experience/experience.service';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
 

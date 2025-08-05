@@ -5,36 +5,37 @@ import { CardModule } from 'primeng/card';
 import { BadgeModule } from 'primeng/badge';
 import { AvatarModule } from 'primeng/avatar';
 import { TabsModule } from 'primeng/tabs';
-import { SkillsService } from '../../services/skills/skills.service';
+// import { SkillsService } from '../../services/skills/skills.service';
 import { HttpClient } from '@angular/common/http';
-// import { isPlatformBrowser } from '@angular/common';
-// import { Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Inject, PLATFORM_ID } from '@angular/core';
 
 
 
 @Component({
   selector: 'app-skills',
+  standalone: true,
   imports: [CommonModule, CardModule, BadgeModule, AvatarModule, TabsModule],
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent {
-
   frontendSkills: any[] = [];
   backendSkills: any[] = [];
   toolsSkills: any[] = [];
 
-  constructor(private skillsService: SkillsService) {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private http: HttpClient) {
     this.fetchSkills();
   }
 
   fetchSkills(): void {
-    this.skillsService.getSkillsData().subscribe(data => {
-      console.log('Skills data fetched:', data);
-      this.frontendSkills = data.frontendSkills;
-      this.backendSkills = data.backendSkills;
-      this.toolsSkills = data.toolsSkills;
-    });
+    if (isPlatformBrowser(this.platformId)) {
+      this.http.get<{ frontendSkills: any[], backendSkills: any[], toolsSkills: any[] }>('/assets/skills/skills-data.json').subscribe(data => {
+        this.frontendSkills = data.frontendSkills;
+        this.backendSkills = data.backendSkills;
+        this.toolsSkills = data.toolsSkills;
+      });
+    }
   }
-}
+  }
 
