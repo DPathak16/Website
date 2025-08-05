@@ -14,7 +14,6 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-skills',
-  standalone: true,
   imports: [CommonModule, CardModule, BadgeModule, AvatarModule, TabsModule],
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],

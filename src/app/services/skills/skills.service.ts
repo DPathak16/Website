@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root' // Ensures the service is globally available
 })
 export class SkillsService {
-  private apiUrl = 'assets/skills/skills-data.json'; // Correct relative path to the JSON file
+  private apiUrl = '/assets/skills/skills-data.json'; // Correct relative path to the JSON file
 
   constructor(private http: HttpClient) {}
 
