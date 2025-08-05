@@ -173,9 +173,9 @@ p-tabpanel {
 }
 
 @media (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: 1fr; /* 1 card in a row for very small screens */
-  }
+  /* .skills-grid {
+   grid-template-columns: 1fr; 
+  } */
 
   .skill-header h1 {
     font-size: 2.5rem;

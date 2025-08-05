@@ -73,3 +73,77 @@
   object-fit: contain;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-section h2 {
+    font-size: 4rem; /* Adjust header size for tablets */
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    max-width: 400px; /* Reduce input width for tablets */
+  }
+
+  .contact-icons {
+    gap: 150px; /* Reduce gap between icons */
+  }
+
+  .contact-icons a {
+    width: 120px;
+    height: 120px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 3rem; /* Adjust header size for smaller screens */
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    max-width: 350px; /* Further reduce input width */
+  }
+
+  .contact-icons {
+    flex-direction: column; /* Stack icons vertically */
+    gap: 30px; /* Reduce gap for vertical layout */
+  }
+
+  .contact-icons a {
+    width: 100px;
+    height: 100px; /* Smaller icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 2.5rem; /* Smaller header size for mobile */
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    max-width: 300px; /* Reduce input width for mobile */
+  }
+
+  .contact-icons a {
+    width: 80px;
+    height: 80px; /* Smaller icon size for mobile */
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-section h2 {
+    font-size: 2rem; /* Further reduce header size for very small screens */
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    max-width: 250px; /* Further reduce input width */
+  }
+
+  .contact-icons a {
+    width: 70px;
+    height: 70px; /* Smallest icon size */
+  }
+}
+
