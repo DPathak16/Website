@@ -3,7 +3,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 // Update the path below if 'header.component' is in a different folder
 // import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
+// import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 // import { ProjectsComponent } from './components/projects/projects.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   imports: [
-    FooterComponent,
+    // FooterComponent,
     SkillsComponent,
     // ProjectsComponent,
     AboutComponent,
