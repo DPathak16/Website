@@ -1,5 +1,8 @@
 <header class="skill-header">
   <h1 class="fascinate-inline-regular">Technical Skills</h1>
+  <p class="skill-description fugaz-one-regular">
+    Explore my expertise in various technologies, categorized into Frontend, Backend, and Tools.
+  </p>
 </header>
 <p-tabs value="0" scrollable>
   <p-tablist>
@@ -31,8 +34,8 @@
             <img [src]="skill.img" [alt]="skill.name" class="skill-img" />
           </ng-template>
           <div class="skill-body">
-            <h4>{{ skill.name }}</h4>
-            <p>{{ skill.description }}</p>
+            <h4 class="bebas-neue-regular">{{ skill.name }}</h4>
+            <p class="righteous-regular">{{ skill.description }}</p>
             <div class="skill-level">
               <i
                 *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
@@ -53,8 +56,8 @@
             <img [src]="skill.img" [alt]="skill.name" class="skill-img" />
           </ng-template>
           <div class="skill-body">
-            <h4>{{ skill.name }}</h4>
-            <p>{{ skill.description }}</p>
+            <h4 class="bebas-neue-regular">{{ skill.name }}</h4>
+            <p class="righteous-regular">{{ skill.description }}</p>
             <div class="skill-level">
               <i
                 *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
@@ -75,8 +78,8 @@
             <img [src]="skill.img" [alt]="skill.name" class="skill-img" />
           </ng-template>
           <div class="skill-body">
-            <h4>{{ skill.name }}</h4>
-            <p>{{ skill.description }}</p>
+            <h4 class="bebas-neue-regular">{{ skill.name }}</h4>
+            <p class="righteous-regular">{{ skill.description }}</p>
             <div class="skill-level">
               <i
                 *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"

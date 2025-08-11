@@ -105,7 +105,6 @@
   }
 
   .contact-icons {
-    flex-direction: column; /* Stack icons vertically */
     gap: 30px; /* Reduce gap for vertical layout */
   }
 

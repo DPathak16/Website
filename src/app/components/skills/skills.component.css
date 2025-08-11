@@ -111,14 +111,22 @@ p-tabpanel {
 .skill-body h4 {
   color: #D2AE93;
   margin: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 .skill-body p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: rgba(210, 174, 147, 0.8); /* Slightly transparent gold */
   margin: 0.25rem 0 0.75rem;
+}
+
+/* Skill Description */
+.skill-description {
+  font-size: 1.8rem;
+  color: #D2AE93; /* Light gray */
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Star Rating */
